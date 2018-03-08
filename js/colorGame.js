@@ -6,10 +6,18 @@ var colors = [
   "rgb(0, 255, 255)",
   "rgb(0, 0, 255)"
 ]
-var squares = document.querySelectorAll("#square");
+var squares = document.querySelectorAll(".square");
+
 var selectedWinColor = colors[2];
+var colorDisplay = document.getElementById("colorDisplay");
 
- for (var i = 0; i < squares.Length; i++){
-   squares[i].style.background = colors[i];
+colorDisplay.textContent = selectedWinColor;
+for (var i = 0; i < squares.length; i++){
+  squares[i].style.backgroundColor = colors[i];
+  if
+};
 
- };
+
+ //
+
+ // var colorDisplay = document.getElementById("colorDisplay");
