@@ -5,6 +5,7 @@ var colorDisplay = document.getElementById("colorDisplay");//pulled top RGB sect
 var selectedWinColor = randomColor();//winning random color
 
 colorDisplay.textContent = selectedWinColor;
+
 //Process
 for (var i = 0; i < squares.length; i++){
   //added colors to squares
@@ -26,7 +27,9 @@ for (var i = 0; i < squares.length; i++){
 };
 
 function changeColor(color) {
+  //loop through all squares
   for(var i = 0; i < squares.length; i++){
+    //chage each color to match given color
     squares[i].style.backgroundColor = color;
   };
 };
