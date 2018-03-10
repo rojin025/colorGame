@@ -73,6 +73,8 @@ resetButton.addEventListener("click", function(){
 	colors = generateRandomColors(6);
 	//pick a new random color from array
 	pickedColor = pickColor;
+  //change colorDisplay to match picked colors
+  colorDisplay.textContent = pickedColor;
 
 colorDisplay.textContent = pickedColor;
 
