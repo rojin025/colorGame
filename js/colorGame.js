@@ -66,6 +66,13 @@ var pickedColor = pickColor();
 var colorDisplay = document.getElementById("colorDisplay");
 var messageDisplay = document.querySelector("#message");
 var h1 = document.querySelector("h1");
+var resetButton = document.querySelector("#reset");
+
+resetButton.addEventListener("click", function(){
+	//generate all new colorDisplay
+	colors = generateRandomColors(6);
+	//pick a new random color from array
+	pickedColor = pickColor;
 
 colorDisplay.textContent = pickedColor;
 
