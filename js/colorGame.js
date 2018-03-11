@@ -86,17 +86,33 @@ easyBtn.addEventListener("click", function() {
 	}
 });
 
-resetButton.addEventListener("click", function(){
-	//generate all new colorDisplay
-	colors = generateRandomColors(6);
-	//pick a new random color from array
-	pickedColor = pickColor;
-  //change colorDisplay to match picked colors
-  colorDisplay.textContent = pickedColor;
-  //change colors to squares
-  for(var i = 0; i < squares.length; i++){
+hardBtn.addEventListener("click", function() {
+	hardBtn.classList.add("selected");
+	easyBtn.classList.remove("selected");
+	numSquares = 6;
+	colors = generateRandomColors(numSquares);
+	pickedColor = pickColor();
+	colorDisplay.textContent = pickedColor;
+	for(var i = 0; i < squares.length; i++) {
+		squares[i].style.background = colors[i];
+		squares[i].style.display = "block";
+	}
+});
 
-  }
+resetButton.addEventListener("click", function() {
+	//generate all new colors
+	colors = generateRandomColors(numSquares);
+	//pick a new random color from array
+	pickedColor = pickColor();
+	//change colorDisplay to match picked Color
+	colorDisplay.textContent = pickedColor;
+	//change colors of squares
+	for(var i = 0; i < squares.length; i++) {
+		squares[i].style.background = colors[i];
+	}
+	h1.style.background = "#232323";
+});
+
 
 colorDisplay.textContent = pickedColor;
 
