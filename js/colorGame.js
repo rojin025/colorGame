@@ -59,6 +59,7 @@
 //   return "rgb(" + r + ", " + g + ", " + b + ")";
 // }
 
+var numSquares = 6;
 var colors = generateRandomColors(6);
 
 var squares = document.querySelectorAll(".square");
