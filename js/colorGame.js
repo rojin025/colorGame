@@ -144,10 +144,10 @@ for(var i = 0; i < squares.length; i++){
 // 	}
 // }
 
-function pickColor() {
-	var random = Math.floor(Math.random() * colors.length);
-	return colors[random];
-}
+// function pickColor() {
+// 	var random = Math.floor(Math.random() * colors.length);
+// 	return colors[random];
+// }
 
 function generateRandomColors(num) {
 	//make an array
