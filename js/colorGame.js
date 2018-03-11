@@ -149,17 +149,17 @@ for(var i = 0; i < squares.length; i++){
 // 	return colors[random];
 // }
 
-function generateRandomColors(num) {
-	//make an array
-	var arr = [];
-	//add num random colors to arr
-	for(var i = 0; i < num; i++) {
-		//get random color and push into arr
-		arr.push(randomColor());
-	}
-	//return that array
-	return arr;
-}
+// function generateRandomColors(num) {
+// 	//make an array
+// 	var arr = [];
+// 	//add num random colors to arr
+// 	for(var i = 0; i < num; i++) {
+// 		//get random color and push into arr
+// 		arr.push(randomColor());
+// 	}
+// 	//return that array
+// 	return arr;
+// }
 
 function randomColor() {
 	//pick a "red" from 0 - 255
